@@ -12,3 +12,5 @@ def list_containers():
  if __name__ == "__main__":
    for name, image, status in list_containers():
      print(f"{name:20} | {image:30} | {status}")
+
+     
