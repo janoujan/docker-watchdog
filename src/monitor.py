@@ -1,4 +1,6 @@
-import docker
+#!/usr/bin/env python3
+
+import docker 
  
 def list_containers():
  """
@@ -9,8 +11,8 @@ def list_containers():
  containers = client.containers.list(all=True)
  return [(c.name, c.image.tags[0] if c.image.tags else "inconnu", c.status)
    for c in containers]
- if __name__ == "__main__":
+
+if __name__ == "__main__":
    for name, image, status in list_containers():
      print(f"{name:20} | {image:30} | {status}")
 
-     
