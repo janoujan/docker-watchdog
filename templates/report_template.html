@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapport Hebdomadaire des Conteneurs Docker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rapport Hebdomadaire des Conteneurs Docker</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Image</th>
+                <th>Statut</th>
+                <th>CPU (%)</th>
+                <th>Mémoire (Mo)</th>
+                <th>Rx (Ko)</th>
+                <th>Tx (Ko)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for container in containers %}
+            <tr>
+                <td>{{ container.Nom }}</td>
+                <td>{{ container.Image }}</td>
+                <td>{{ container.Statut }}</td>
+                <td>{{ container['CPU (%)'] }}</td>
+                <td>{{ container['Mémoire (Mo)'] }}</td>
+                <td>{{ container['Rx (Ko)'] }}</td>
+                <td>{{ container['Tx (Ko)'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

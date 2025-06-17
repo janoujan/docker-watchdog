@@ -1,6 +1,9 @@
 docker
+streamlit
+jinja2
+weasyprint
+networkx
+matplotlib
+pandas
 tabulate
-pytest
-pytest-cov
-json
-argparse
+statistics
