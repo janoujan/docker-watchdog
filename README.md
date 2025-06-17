@@ -2,13 +2,13 @@
  Un outil Python destiné aux administrateurs système pour suivre et obtenir des statistiques 
 sur les conteneurs Docker en cours d'exécution.
 
- ## Objectif du projet
+## Objectif du projet
  Ce script interroge le démon Docker local et retourne une liste des conteneurs présents, 
 avec leur nom, image et statut d'exécution, RAM et CPU
 
-  #### Projet à but educatif
+#### Projet à but educatif
 
-  ## Installation
+## Installation
   
   1-/ cloner le projet 
   ou telecharger le .zip et le decompresser à l'endroit souhaité 
@@ -16,11 +16,18 @@ avec leur nom, image et statut d'exécution, RAM et CPU
   2-/ positionner vous dans le projet 
   ~cd /docker-watchdog
 
-   ## Utilisation
+## Utilisation
 
-  3 -/ run the watchdog
-[~/docker-watchdog]: python3 src/docker-watchdog
+### run the watchdog
+python3 src/docker-watchdog
 
+### export in JSON
+ python src/monitor.py --format json
+
+### export in csv
+python src/monitor.py --format csv
+
+export the result
    ## Dockerisation
     prerequisites: 
         Docker
