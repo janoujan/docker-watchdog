@@ -69,8 +69,8 @@ http://127.0.0.1:8501
 ## Dockerization
 
 ### Prerequisites
-Docker
-docker-compose
+- docker
+- docker-compose
 
 ### Build and start the container
 ````bash
