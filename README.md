@@ -20,3 +20,16 @@ avec leur nom, image et statut d'exécution, RAM et CPU
 
   3 -/ run the watchdog
 [~/docker-watchdog]: python3 src/docker-watchdog
+
+   ###### Dockerisation
+    prerequisites: 
+        Docker
+        Docker-compose
+
+    to compose the container:
+    docker-compose up --build
+
+    to shudown and wipe it out (container + image + volume)
+    docker-compose down --rmi all --volumes
+
+    
