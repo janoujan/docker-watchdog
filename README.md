@@ -6,22 +6,22 @@ sur les conteneurs Docker en cours d'exécution.
  Ce script interroge le démon Docker local et retourne une liste des conteneurs présents, 
 avec leur nom, image et statut d'exécution, RAM et CPU
 
-  ### Projet à but educatif
+  #### Projet à but educatif
 
-  #### Installation
+  ## Installation
   
-  1 -/ cloner le projet 
+  1-/ cloner le projet 
   ou telecharger le .zip et le decompresser à l'endroit souhaité 
  
-  2 -/ positionner vous dans le projet 
+  2-/ positionner vous dans le projet 
   ~cd /docker-watchdog
 
-   ##### Utilisation
+   ## Utilisation
 
   3 -/ run the watchdog
 [~/docker-watchdog]: python3 src/docker-watchdog
 
-   ###### Dockerisation
+   ## Dockerisation
     prerequisites: 
         Docker
         Docker-compose
@@ -32,4 +32,4 @@ avec leur nom, image et statut d'exécution, RAM et CPU
     to shudown and wipe it out (container + image + volume)
     docker-compose down --rmi all --volumes
 
-    
+
