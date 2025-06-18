@@ -62,9 +62,7 @@ python src/monitor.py --format csv
 ````bash
 streamlit run docker_dashboard.py
 ````
-Then access the following URL in your browser:
-
-http://127.0.0.1:8501
+Then follow the URL that pop-out in your console to open the dashboard in your browser
 
 ## Dockerization
 
