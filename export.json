@@ -1,0 +1,38 @@
+[
+  {
+    "Nom": "objective_jennings",
+    "Image": "portainer/portainer-ce:latest",
+    "Statut": "created",
+    "CPU (%)": "-",
+    "M\u00e9moire (Mo)": "-",
+    "Rx (Ko)": "-",
+    "Tx (Ko)": "-"
+  },
+  {
+    "Nom": "dreamy_chandrasekhar",
+    "Image": "portainer/portainer-ce:latest",
+    "Statut": "created",
+    "CPU (%)": "-",
+    "M\u00e9moire (Mo)": "-",
+    "Rx (Ko)": "-",
+    "Tx (Ko)": "-"
+  },
+  {
+    "Nom": "cool_kapitsa",
+    "Image": "portainer/portainer-ce:latest",
+    "Statut": "exited",
+    "CPU (%)": "-",
+    "M\u00e9moire (Mo)": "-",
+    "Rx (Ko)": "-",
+    "Tx (Ko)": "-"
+  },
+  {
+    "Nom": "test-nginx",
+    "Image": "nginx:latest",
+    "Statut": "exited",
+    "CPU (%)": "-",
+    "M\u00e9moire (Mo)": "-",
+    "Rx (Ko)": "-",
+    "Tx (Ko)": "-"
+  }
+]

@@ -120,7 +120,7 @@ def list_containers():
             usage = get_container_stats(container)
             stats.update({
                 'CPU (%)': usage['cpu_percent'],
-                'Mémoire (Mo)': usage['mem_MB'],
+                'Memoire (Mo)': usage['mem_MB'],
                 'Rx (Ko)': usage['rx_KB'],
                 'Tx (Ko)': usage['tx_KB']
             })
@@ -166,7 +166,7 @@ def generate_weekly_report(client, output_html, output_pdf):
             'Image': container.image.tags[0] if container.image.tags else 'inconnu',
             'Statut': container.status,
             'CPU (%)': stats['cpu_percent'],
-            'Mémoire (Mo)': stats['mem_MB'],
+            'Memoire (Mo)': stats['mem_MB'],
             'Rx (Ko)': stats['rx_KB'],
             'Tx (Ko)': stats['tx_KB']
         })
@@ -235,6 +235,8 @@ if __name__ == "__main__":
         # Start interaction dashboard
         container_interaction_dashboard(client)
 
+        # Say goodbye :D
+        print("Bien bossé Docker-watchdog !!!")
     except Exception as e:
         import traceback
         traceback.print_exc()

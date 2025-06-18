@@ -1,0 +1,5 @@
+Nom,Image,Statut,CPU (%),Mémoire (Mo),Rx (Ko),Tx (Ko)
+objective_jennings,portainer/portainer-ce:latest,created,-,-,-,-
+dreamy_chandrasekhar,portainer/portainer-ce:latest,created,-,-,-,-
+cool_kapitsa,portainer/portainer-ce:latest,exited,-,-,-,-
+test-nginx,nginx:latest,exited,-,-,-,-

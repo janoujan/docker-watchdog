@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ```bash
 python3 src/monitor.py
 ```
-#### View the report in a browser
+#### View the test coverage report in a browser
 ````bash
 make open-cov
 ````
